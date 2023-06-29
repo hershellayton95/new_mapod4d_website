@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/molecules/Navbar.vue';
+import Hero from './components/molecules/Hero.vue';
 </script>
 
 <template>
@@ -7,56 +8,8 @@ import Navbar from './components/molecules/Navbar.vue';
     <Navbar />
     <!-- main -->
     <main class="conteiner-fluid d-flex flex-column justify-content-center align-items-center mb-5">
-      <section class="py-3 w-100">
-        <div class="d-flex justify-content-center">
-          <a class="btn btn-outline-primary btn-lg" href="/multiverse.html">Metaverses Download</a>
-        </div>
-
-      </section>
       <!-- carosello -->
-      <div id="carouselExampleCaptions" class="carousel slide bg-dark" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/hero_img1_s.png" class="d-block w-100" alt="Main Menu">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="h2">Main Menù</h5>
-              <p>MAPOD4D metaverse main menù</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/hero_img2_s.png" class="d-block w-100" alt="Main Menu">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="h2">Anthropology Metaverse</h5>
-              <p>The ancient jaw acquired using structured light scanner </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/hero_img3_s.png" class="d-block w-100" alt="Main Menu">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="h2 text-light">Cultural Heritage Metaverse</h5>
-              <p>GAM - GOLASECCA ARCHEOLOGIA MULTIMEDIALE</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <Hero />
       <!-- sezione 1 -->
       <section class="container-fluid d-flex align-items-center" style="background-color: var(--blue-mapod4d);">
         <article class="container text-light my-5" style="max-width: 1200px">

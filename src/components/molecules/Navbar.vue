@@ -13,7 +13,7 @@ const menu = ref([
 
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid" style="max-width: 1400px;">
+    <div class="container-fluid px-5" style="max-width: 1400px;">
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="./index.html">
           <img src="../../assets/img/mapod_new_render_scontornato.png" alt="" width="50" height="50"
