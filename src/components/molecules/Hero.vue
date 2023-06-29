@@ -15,7 +15,7 @@
                     </p>
                     <!-- buttons -->
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-primary btn-lg" href="/multiverse.html">Metaverses Download</a>
+                        <a class="btn btn-primary btn-lg" href="/multiverse">Metaverses Download</a>
                     </div>
                 </div>
             </div>

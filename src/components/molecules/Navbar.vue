@@ -1,13 +1,14 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import Social from './Socials.vue'
 const menu = ref([
-  { title: "Home Page", href: './index.html' },
-  { title: "Project", href: './project.html' },
-  { title: "Out in the World", href: './outintheworld.html' },
-  { title: "Showcase", href: './showcase.html' },
-  { title: "Multiverse", href: './multiverse.html' },
-  { title: "Governance", href: './governance.html' }
+  { title: "Home Page", href: '/' },
+  { title: "Project", href: '/project' },
+  { title: "Out in the World", href: '/outintheworld' },
+  { title: "Showcase", href: '/showcase' },
+  { title: "Multiverse", href: '/multiverse' },
+  { title: "Governance", href: '/governance' }
 ])
 </script>
 
@@ -28,8 +29,9 @@ const menu = ref([
       </button>
       <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
         <ul class="navbar-nav gap-lg-3" style="font-size: 1.2rem; font-weight:bold;">
-          <li v-for="(item, i) in menu" :key="i + item" class="nav-item text-center text-uppercase text-nowrap">
-            <a class="nav-link fw-normal fs-6 text-primary" aria-current="page" :href="item.href">{{ item.title }}</a>
+          <li v-for="(page, i) in menu" :key="i + item" class="nav-item text-center text-uppercase text-nowrap">
+            <RouterLink class="nav-link fw-normal fs-6 text-primary" aria-current="page" :to="page.href">{{ page.title }}
+            </RouterLink>
           </li>
         </ul>
         <div id="socials" class="d-xl-flex gap-2 d-none ms-3">
